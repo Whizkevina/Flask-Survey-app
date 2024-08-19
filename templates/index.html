@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income and Expenses Survey</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Basic CSS Styling -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Income and Expenses Survey</h1>
+        <form action="/submit" method="POST">
+            <label for="age">Age:</label>
+            <input type="text" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="total_income">Total Income:</label>
+            <input type="text" name="total_income" required>
+
+            <div class="checkbox-container">
+                <label for="utilities">Utilities:</label>
+                <input type="number" name="utilities" placeholder="Amount" required>
+            </div>
+
+            <div class="checkbox-container">
+                <label for="entertainment">Entertainment:</label>
+                <input type="number" name="entertainment" placeholder="Amount" required>
+            </div>
+
+            <div class="checkbox-container">
+                <label for="school_fees">School Fees:</label>
+                <input type="number" name="school_fees" placeholder="Amount" required>
+            </div>
+
+            <div class="checkbox-container">
+                <label for="shopping">Shopping:</label>
+                <input type="number" name="shopping" placeholder="Amount" required>
+            </div>
+
+            <div class="checkbox-container">
+                <label for="healthcare">Healthcare:</label>
+                <input type="number" name="healthcare" placeholder="Amount" required>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <footer>
+            <p>Developed by <b>Adebanjo Temitope</b></p>
+        </footer>
+    </div>
+</body>
+</html>

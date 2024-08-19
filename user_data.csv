@@ -1,0 +1,3 @@
+_id,age,gender,total_income,expenses
+66c33c0114f6d04b5d0f7c1c,25,male,"700,000","{'utilities': '50', 'entertainment': '2500', 'school_fees': '5000', 'shopping': '4000', 'healthcare': '6000'}"
+66c340e714f6d04b5d0f7c1d,29,female,50000,"{'utilities': '8000', 'entertainment': '9000', 'school_fees': '100000', 'shopping': '50000', 'healthcare': '67000'}"
